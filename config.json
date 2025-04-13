@@ -1,0 +1,10 @@
+{
+    "db_uri":"mongodb://localhost/huntdb",
+    "jwd_secret":"thisisatesttokenforhuntapplication",
+    "ROLES":["USER","STORE","ADMIN" , "ORGANIZATION" , "AGENCY" ,"AGENCY_USER"]
+} 
+
+
+
+
+

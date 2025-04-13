@@ -1,0 +1,1125 @@
+sudo ssh measuremints@161.97.157.111
+
+Live Password = 
+measuremints
+E8sd3FTlia
+
+path
+/home/measuremints/web/measuremints.plenumnetworks.com/public_html
+cd web/measuremints.plenumnetworks.com/public_html
+
+
+
+
+
+systemctl start mongod 
+systemctl restart mongod 
+systemctl status mongod 
+
+
+
+****GET IP
+ip a |grep net
+
+****Edit File
+nano /etc/mongod.conf
+commnad + x (return) then enter Y (return)
+systemctl restart mongod 
+systemctl status mongod 
+
+
+
+****Create User****
+use admin
+db.createUser({ user: "admin" , pwd: "System@123", roles: ["userAdminAnyDatabase", "dbAdminAnyDatabase", "readWriteAnyDatabase"]})
+
+    db.createUser(
+{
+    user: "admin",
+    pwd: "System@123",
+    roles: [
+              { role: "userAdminAnyDatabase", db: "admin" },
+              ]
+})
+
+
+    db.createUser(
+{
+    user: "admin",
+    pwd: "System@123",
+    roles: [ "root" ]
+})
+
+Create a super user : 
+
+    db.createUser(
+    {
+    user: "admin",
+    pwd: "System@123",
+    roles: [ 
+    { 
+    role: "readWriteAnyDatabase", 
+    db: "admin" 
+    }, 
+    {
+    "role" : "dbAdminAnyDatabase",
+    "db" : "admin"
+    },
+    {
+    "role" : "clusterAdmin",
+    "db" : "admin"
+    },
+    "userAdminAnyDatabase" 
+    ]
+    }
+    )
+
+
+
+
+    172.31.80.237
+
+****Connect In EC2
+mongo -u admin -p System@123 127.0.0.1/admin
+mongo -u admin -p System@123 3.227.140.232/admin
+const AwsDB = 'mongodb://admin:System%40123@3.218.199.68:27017/vivaquad?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false'
+
+
+****Local Host
+mongo -u admin -p System@123 54.211.91.221/admin
+const AwsDB = 'mongodb://admin:System%40123@3.218.199.68:27017/vivaquad?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false'
+3.227.140.232	
+
+****IF Not WORKING****S
+systemctl status mongod 
+chown -R mongodb:mongodb /var/lib/mongodb
+chown mongodb:mongodb /tmp/mongodb-27017.sock
+service mongod restart
+
+
+******Show user
+db.getUsers( {
+   showCredentials: true,
+  
+} )
+
+
+****remove user
+db.dropUser("admin")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+I.VIVAQUAD
+1.AWS( https://aws.amazon.com/):✅(WORKING)
+Account: ashley.hughes018@gmail.com
+Password: BB^tCGpF-_+7mf?~
+
+2.Apple Developer(https://developer.apple.com/)
+Email: appsketiersdev@gmail.com ✅(WORKING)
+Password: Test@1234!
+✅❌
+Account: ashley.hughes18@houghton.edu(❌ NOT WORKING)
+Password: BB^tCGpF-_+7mf?~
+
+
+SUBADMIN:
+email : appaccess.dua@gmail.com 
+password:  Plenum@138
+
+
+ 
+3.Google Play (https://play.google.com/apps/publish/signup/)
+Email: appsketiersdev@gmail.com ✅(WORKING)
+Password: 
+
+
+
+
+
+email - ashleyhughes@vivaquad.com (❌ NOT WORKING)
+password - Jared2019!
+
+ 
+4.GoDaddy(https://www.godaddy.com/):✅(WORKING)
+Account:  _Customer Number- 440326846
+Password: BB^tCGpF-_+7mf?~
+
+
+5.SEND GRID✅(WORKING)
+Email: appsketiersdev@gmail.com
+Password: Appsketierstest@1234!
+
+
+
+6.Stripe✅(WORKING)(❌ OTP VERFICATION)
+email - ashley.hughes018@gmail.com
+password - Thisismysandwich!
+
+[0:46 pm, 27/07/2022] +91 95115 16776: Test Mode:
+
+Publisher Key: pk_test_51LDYGLDwWFFOZQ8gH33BEJwdlA31uNNxhsZWTVbIA8wpo5xtMwC7YHWupGF4KEVxB4pZfiyEfMeOMKzNoyVrFBdu00EW7KWDz0
+
+Secret Key: sk_test_51LDYGLDwWFFOZQ8gs7Zg6oBLRX8K6kgXH7EaCrZ8eDItiAONAFChoZ5gGlCNFC7TTTWrq4OEqgZ61BItY5XmpZ4i005AEBkrTs
+[0:47 pm, 27/07/2022] +91 95115 16776: Live Mode: pk_live_51LDYGLDwWFFOZQ8gxkYEYVKP8tGhl0pfbm7TBmVq4c3qpzqAqjHwy6l20wp0KYvoo7lq1AZj9jc4LgUJ4FAMWa9e00hZbRLTnJ
+
+Secret Key: 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
+
+
+
+TEST
+Email: vivaquad2022@gmail.com
+Password: vivaquad@12345678
+
+
+1. Featured graphics   => Size => 1024px by 500px => JPG
+2. Privacy policy and policy url => http://vivaquad.xyz/api/policy
+3. Tags/ keywords
+4. Support url 
+5. Contact information( phone, first name, last name, email, address )
+6. Short description
+7. Full Description
+
+Phone: 585-857-4670
+Email: ashley.hughes018@gmail.com (will change once I get the company email)
+Physical address: 26 Brentwood Street, Rochester NY, 14610
+First and last name: Ashley Hughes
+
+PHONE SCREENSHOT: 16:9 to 9:16 => 320px by 3820px
+
+
+Short Description: This application is a platform to let students have their class timetables, dining hall hours, and school announcement in their hands.
+
+Long Description: This is a platform where students can integrate their student ID onto their mobile device, access all their class timetables, dining hall hours, and school announcement with ease. The platform also provides the security officer’s number so, in the case of an emergency, users can easily get connected with them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://vivaquadbackend.plenumnetworks.com/api/get/class-list
+http://vivaquad.xyz/api/get/class-list
+
+
+
+
+
+
+
+
+            let filename;
+            if (req.files && req.files[0] && req.files[0].location) {
+                filename = req.files[0].location;
+               data.avatar = filename;
+
+            }
+
+
+
+
+
+****GENERATE CSR************
+openssl genrsa -out vivaquad.key 2048
+
+
+
+Company: Domains By Proxy, LLC
+Name: Registration Private
+Street Address: DomainsByProxy.com
+Street Address: 2155 E Warner Rd
+City/State: Tempe, Arizona
+Country/Postal Code: United States 85284
+Telephone: +1.4806242599
+Email: vivaquad.xyz@domainsbyproxy.com
+
+password : vivaquad@123
+
+
+
+
+d41d8cd98f00b204e9800998ecf8427e
+d41d8cd98f00b204e9800998ecf8427e
+
+
+
+
+
+listen 80;
+        listen 443 default ssl;
+        server_name http://vivaquad.xyz;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+        ssl_certificate /home/ubuntu/ssl-certs/vivaquad.crt;
+        ssl_certificate_key /home/ubuntu/ssl-certs/vivaquad.key;
+
+
+
+
+
+
+
+
+
+
+
+        openssl x509 -noout -modulus -in vivaquad.crt | openssl md5
+        a842c0cce34384ca356f109dabf112a8
+
+
+openssl rsa -noout -modulus -in vivaquad.key | openssl md5
+a842c0cce34384ca356f109dabf112a8
+
+
+
+a842c0cce34384ca356f109dabf112a8
+
+
+
+
+sudo systemctl stop nginx
+lsudo systemctl start nginx
+sudo service nginx reload
+sudo systemctl restart nginx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+server {
+        listen 80;
+        listen 443 default ssl;
+        server_name 3.227.140.232;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+        ssl_certificate /home/ubuntu/ssl-certs/vivaqaud.crt;
+        ssl_certificate_key /home/ubuntu/ssl-certs/vivaqaud.key;
+
+        location /api {
+                proxy_pass http://localhost:5000; # your app's port
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+        location /{
+                root /var/www/html/vivaqaud/admin-vivaquad/build;
+                index index.html index.htm;
+               
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+server {
+        listen 80;
+        listen 443 default ssl;
+        server_name https://subadmin.vivaquad.xyz;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+        ssl_certificate /home/ubuntu/ssl-certs/vivaquad.crt;
+        ssl_certificate_key /home/ubuntu/ssl-certs/vivaquad.key;
+
+
+
+        # subadmin with react
+location /{
+root /var/www/html/vivaquad/admin-vivaquad/build;
+index index.html index.htm;
+autoindex on ;
+try_files $uri /index.html =404;
+
+ }
+}
+
+nano subadmin.vivaquad.xyz
+
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+
+
+
+server {
+        listen 80;
+        listen 443 default ssl;
+        server_name https://subadmin.vivaquad.xyz;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+        ssl_certificate /home/ubuntu/ssl-certs/vivaquad.crt;
+       ssl_certificate_key /home/ubuntu/ssl-certs/vivaquad.key;
+
+       
+        # subadmin frontend with react
+location /{
+root /var/www/html/vivaquad/admin-vivaquad/build;
+index index.html index.htm;
+autoindex on ;
+try_files $uri /index.html =404;
+
+ }
+}
+
+
+
+
+sudo nano /etc/nginx/sites-available/subadmin.vivaquad.xyz
+
+sudo ln –s /etc/nginx/sites-available/subadmin.vivaquad.xyz /etc/nginx/sites-enabled/
+
+
+
+subadmin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+server {
+        listen 80;
+        listen 443 ssl;
+        server_name https://vivaquad.xyz;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+        ssl_certificate /home/ubuntu/ssl-certs/vivaquad.crt;
+       ssl_certificate_key /home/ubuntu/ssl-certs/vivaquad.key;
+
+        location /api {
+                proxy_pass https://vivaquad.xyz:5000; # your app's port
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+        # frontend with react
+location /{
+root /var/www/html/vivaquad/admin-vivaquad/build;
+index index.html index.htm;
+autoindex on ;
+try_files $uri /index.html =404;
+
+ }
+}
+
+
+sudo systemctl stop nginx
+lsudo systemctl start nginx
+sudo service nginx reload
+sudo systemctl restart nginx
+sudo systemctl status nginx
+
+
+
+
+
+
+sudo ln –s /etc/nginx/sites-available/subadmin.vivaquad.xyz /etc/nginx/sites-enabled/
+
+
+
+www.vivaquad.xyz
+
+
+server {
+        listen 80;
+        listen 443 ssl;
+        server_name vivaquad.xyz;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+
+       ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+       ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad.key;
+
+       ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers 'EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH';
+
+
+        location /api {
+                proxy_pass https://vivaquad.xyz:5000; # your app's port
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+        # frontend with react
+location /{
+root /var/www/html/vivaquad/admin-vivaquad/build;
+index index.html index.htm;
+autoindex on ;
+try_files $uri /index.html =404;
+
+ }
+}
+
+
+
+systemctl restart nginx
+systemctl status nginx
+
+nginx -t
+
+
+nano subadmin.vivaquad.xyz.ssl.conf 
+
+
+server {
+listen 80;
+listen 443 ssl;
+ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad_new.key;
+root /var/www/html/vivaquad/admin-vivaquad/build;
+server_name subadmin.vivaquad.xyz;
+location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                 try_files $uri $uri/ =404;
+
+        }
+}
+
+
+
+
+
+
+
+nano apis.vivaquad.xyz.conf 
+
+server {
+listen 80;
+listen 443 ssl;
+ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad_new.key;
+root /var/www/html/vivaquad/admin-vivaquad/build;
+server_name apis.vivaquad.xyz;
+location /api {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                # try_files $uri $uri/ =404;
+                proxy_pass https://vivaquad.xyz:5000; # your app's port
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+}
+
+nano vivaquad.xyz-ssl.conf
+
+
+server {
+listen 80;
+listen 443 ssl;
+ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad.key;
+root /var/www/html/vivaquad/admin-vivaquad/build;
+server_name galinukkad.com;
+
+location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                 try_files $uri $uri/ =404;
+
+        }
+}
+
+
+
+//
+
+server {
+listen 80;
+
+server_name vivaquad.xyz;
+
+return 301 https://$server_name$request_uri;
+}
+
+
+
+
+
+nano subadmin.vivaquad.xyz
+
+
+##
+# You should look at the following URL's in order to grasp a solid understanding
+# of Nginx configuration files in order to fully unleash the power of Nginx.
+# https://www.nginx.com/resources/wiki/start/
+# https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+# https://wiki.debian.org/Nginx/DirectoryStructure
+#
+# In most cases, administrators will remove this file from sites-enabled/ and
+# leave it as reference inside of sites-available where it will continue to be
+# updated by the nginx packaging team.
+#
+# This file will automatically load configuration files provided by other
+# applications, such as Drupal or Wordpress. These applications will be made
+# available underneath a path with that package name, such as /drupal8.
+#
+# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+##
+
+# Default server configuration
+#
+server {
+        listen 80;
+        listen [::]:80;
+
+        # SSL configuration
+        #
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;
+        #
+        # Note: You should disable gzip for SSL traffic.
+        # See: https://bugs.debian.org/773332
+        #
+        # Read up on ssl_ciphers to ensure a secure configuration.
+        # See: https://bugs.debian.org/765782
+        #
+        # Self signed certs generated by the ssl-cert package
+        # Don't use them in a production server!
+        #
+        # include snippets/snakeoil.conf;
+
+       root /var/www/html/vivaquad/admin-vivaquad/build;
+
+
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name subadmin.vivaquad.xyz;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                 try_files $uri $uri/ =404;
+
+        }
+
+        # pass PHP scripts to FastCGI server
+        #
+        #location ~ \.php$ {
+        #       include snippets/fastcgi-php.conf;
+         #
+        #       # With php-fpm (or other unix sockets):
+        #       fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        #       # With php-cgi (or other tcp sockets):
+        #       fastcgi_pass 127.0.0.1:9000;
+        #}
+
+        # deny access to .htaccess files, if Apache's document root
+        # concurs with nginx's one
+        #
+        #location ~ /\.ht {
+        #       deny all;
+        #}
+        return 301 https://subadmin.vivaquad.xyz$request_uri;
+}
+
+
+# Virtual Host configuration for example.com
+
+
+
+
+
+nano vivaquad.xyz
+
+
+##
+# You should look at the following URL's in order to grasp a solid understanding
+# of Nginx configuration files in order to fully unleash the power of Nginx.
+# https://www.nginx.com/resources/wiki/start/
+# https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+# https://wiki.debian.org/Nginx/DirectoryStructure
+#
+# In most cases, administrators will remove this file from sites-enabled/ and
+# leave it as reference inside of sites-available where it will continue to be
+# updated by the nginx packaging team.
+#
+# This file will automatically load configuration files provided by other
+# applications, such as Drupal or Wordpress. These applications will be made
+# available underneath a path with that package name, such as /drupal8.
+#
+# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+##
+
+# Default server configuration
+#
+server {
+        listen 80;
+        listen [::]:80;
+
+        # SSL configuration
+        #
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;
+        #
+        # Note: You should disable gzip for SSL traffic.
+        # See: https://bugs.debian.org/773332
+        #
+        # Read up on ssl_ciphers to ensure a secure configuration.
+        # See: https://bugs.debian.org/765782
+        #
+        # Self signed certs generated by the ssl-cert package
+        # Don't use them in a production server!
+        #
+        # include snippets/snakeoil.conf;
+
+       root /var/www/html/vivaquad/admin-vivaquad/build;
+
+
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name vivaquad.xyz;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                 try_files $uri $uri/ =404;
+
+        }
+
+        # pass PHP scripts to FastCGI server
+        #
+        #location ~ \.php$ {
+        #       include snippets/fastcgi-php.conf;
+         #
+        #       # With php-fpm (or other unix sockets):
+        #       fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        #       # With php-cgi (or other tcp sockets):
+        #       fastcgi_pass 127.0.0.1:9000;
+        #}
+
+        # deny access to .htaccess files, if Apache's document root
+        # concurs with nginx's one
+        #
+        #location ~ /\.ht {
+        #       deny all;
+        #}
+        return 301 https://vivaquad.xyz$request_uri;
+}
+
+
+# Virtual Host configuration for example.com
+
+
+
+
+
+
+
+
+
+
+
+nano apis.vivaquad.xyz
+
+
+
+
+##
+# You should look at the following URL's in order to grasp a solid understanding
+# of Nginx configuration files in order to fully unleash the power of Nginx.
+# https://www.nginx.com/resources/wiki/start/
+# https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/
+# https://wiki.debian.org/Nginx/DirectoryStructure
+#
+# In most cases, administrators will remove this file from sites-enabled/ and
+# leave it as reference inside of sites-available where it will continue to be
+# updated by the nginx packaging team.
+#
+# This file will automatically load configuration files provided by other
+# applications, such as Drupal or Wordpress. These applications will be made
+# available underneath a path with that package name, such as /drupal8.
+#
+# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+##
+
+# Default server configuration
+#
+server {
+        listen 80;
+        listen [::]:80;
+
+        # SSL configuration
+        #
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;
+        #
+        # Note: You should disable gzip for SSL traffic.
+        # See: https://bugs.debian.org/773332
+        #
+        # Read up on ssl_ciphers to ensure a secure configuration.
+        # See: https://bugs.debian.org/765782
+        #
+        # Self signed certs generated by the ssl-cert package
+        # Don't use them in a production server!
+        #
+        # include snippets/snakeoil.conf;
+
+root /var/www/html/vivaquad/admin-vivaquad/build;
+
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name apis.vivaquad.xyz;
+
+        location /api {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                # try_files $uri $uri/ =404;
+                proxy_pass https://vivaquad.xyz:5000; # your app's port
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+}
+
+
+sudo ln –s /etc/nginx/sites-available/subadmin.vivaquad.xyz /etc/nginx/sites-enabled/
+
+ln -s /etc/nginx/sites-available/subadmin.vivaquad.xyz /etc/nginx/sites-enabled/subadmin.vivaquad.xyz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+server {
+        listen 80;
+        listen 443 ssl;
+        server_name subadmin.vivaquad.xyz;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+
+       ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+       ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad.key;
+
+
+
+              # frontend with react subadmin
+location /{
+root /var/www/html/vivaquad/admin-vivaquad/build;
+index index.html index.htm;
+autoindex on ;
+try_files $uri /index.html =404;
+}
+
+     return 301 https://measuremints.xyz$request_uri;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+server {
+        listen 80;
+        listen 443 ssl;
+        server_name apis.vivaquad.xyz;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+
+       ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+       ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad.key;
+
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers 'EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH';
+
+
+        location /api {
+                proxy_pass https://vivaquad.xyz:5000; # your app's port
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+     
+}
+
+
+
+return 301 https://vivaquad.xyz$request_uri;
+
+
+
+server {
+listen 80;
+listen [::]:80;
+
+server_name measuremints.xyz;
+
+
+# backend with node
+location /api{
+proxy_set_header   X-Forwarded-For $remote_addr;
+proxy_set_header   Host $http_host;
+proxy_pass http://measuremints.xyz:5000;
+}
+
+# frontend with react
+location /{
+root /var/www/html/measuremints/meas-admin/build/;
+index index.html index.htm;
+autoindex on ;
+try_files $uri /index.html =404;
+
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.Not receiving order confirmation message
+2. In mail ID not receiving tracking ID
+3. We are able to apply coupon of price greater than and equal to product's price and it is showing price in negative and 0
+4. After cancelling the product, not receiving money back or any message or mail related to order cancel
+5. In downloaded invoice- Payment method is always showing card, while we have used UPI payment https://prnt.sc/DKPo-FkQoUuf
+6. In downloaded invoice- Date format is also wrong in Invoice
+7. In downloaded invoice- Authorized Signatorys must be replaced with 'Authorized Signatory', Signatorys is not a word
+8. In downloaded invoice- Amount in words should visible same as we are seeing in app invoice for e.g., One Rupees Only
+9. From My Order>> Order Details>> In invoice Net Amount is not visible https://prnt.sc/syX8eRmtMZ_h
+10. Tracking status from admin- When we are updating status of cancelled product, then it should not show- All options e.g., Shipped, Out For Delivery, Delivered, Return, Picked, Exchange Picked,etc https://prnt.sc/2SmVQ50SyGy-
+11. For cancelled product admin is currently able update status to Delivered, which is wrong https://prnt.sc/qlvYMKjZ5JXj
+
+
+Developer Miss
+1. 
+6. 
+
+Testing Miss
+2.
+3
+4.
+5.
+7.
+8. 
+9.
+10.
+11.
+
+
+
+
+{
+  "_id": {
+    "$oid": "6328422fc37b2c2a7b1bfeb3"
+  },
+  "username": "Delete",
+  "email": "delete@mailinator.com",
+  "mobile_number": "1404575499",
+  "meal": 0,
+  "password": "$2b$10$sXj/gwn22X3MwP7x9yHZpu/82odTBCtAygCtAivAzfww9xt5pHcRu",
+  "roles": "STUDENT",
+  "otp": null,
+  "isEmailVerified": true,
+  "user_status": true,
+  "isAccountVerified": true,
+  "avatar": "https://vivaquad-bucket.s3.amazonaws.com/public_asset/16635827643331500.png",
+  "id_card": [
+    {
+      "id_card_front": "https://vivaquad-bucket.s3.amazonaws.com/public_asset/16635827643063736.png"
+    },
+    {
+      "id_card_back": "https://vivaquad-bucket.s3.amazonaws.com/public_asset/16635827643132557.png"
+    }
+  ],
+  "dob": "09/05/2022",
+  "firebase_token": "dIqr8KkRQ42kzkbyVHvo2p:APA91bH8w73P0HVvWOFDnEMq7WdyfeXYCQs_o03pgoNoDw7mxjdnwzLGnKDpKvsD1wZon5VQf2W3eg6h8Bh7gPFN3Hek7OBoLukQSu0ItUg8jHKMg6BLeyS0QpQYYvbNOkjb7WMrkB4H",
+  "last_login_time": null,
+  "no_of_loggedin": 0,
+  "school_id": {
+    "$oid": "62e274a0a66b2fce7c95c1c3"
+  },
+  "hall_id": null,
+  "employee_type": null,
+  "isNotification": true,
+  "stream_id": null,
+  "year": "",
+  "class_name": "",
+  "payment_status": false,
+  "created_at": {
+    "$date": {
+      "$numberLong": "1663582767061"
+    }
+  },
+  "updated_at": {
+    "$date": {
+      "$numberLong": "1663582781691"
+    }
+  },
+  "__v": 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/payment/generate-token/
+{netamount,txn_id}

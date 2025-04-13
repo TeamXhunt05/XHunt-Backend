@@ -1,0 +1,200 @@
+default
+nano thewaves.xyz
+
+server {
+        listen 80;
+        listen 443 ssl;
+        server_name thewaves.xyz;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+
+       ssl_certificate /home/ubuntu/apache-ssl-certs/waves_new.crt;
+       ssl_certificate_key /home/ubuntu/apache-ssl-certs/waves.key;
+
+       ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+       ssl_prefer_server_ciphers on;
+       ssl_ciphers 'EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH';
+
+
+        location /api {
+                proxy_pass https://thewaves.xyz:6000; # your app's port
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+        # frontend with react
+location /{
+root /var/www/html/waves/waves-admin/build;
+index index.html index.htm;
+autoindex on ;
+try_files $uri /index.html =404;
+
+ }
+}
+
+
+
+
+
+nano apis.vivaquad.xyz.conf 
+server {
+listen 80;
+listen 443 ssl;
+ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad.key;
+root /var/www/html/vivaquad/admin-vivaquad/build;
+server_name vivaquad.xyz;
+location /api {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                # try_files $uri $uri/ =404;
+                proxy_pass https://vivaquad.xyz:5000; # your app's port
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+}
+
+
+
+nano subadmin.vivaquad.xyz.ssl.conf
+server {
+listen 80;
+listen 443 ssl;
+ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad.key;
+root /var/www/html/vivaquad/admin-vivaquad/build;
+server_name subadmin.vivaquad.xyz;
+location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                 try_files $uri $uri/ =404;
+
+        }
+}
+
+
+nano vivaquad.xyz-ssl.conf
+server {
+listen 80;
+listen 443 ssl;
+ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad.key;
+root /var/www/html/vivaquad/admin-vivaquad/build;
+server_name vivaquad.xyz;
+
+location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                 try_files $uri $uri/ =404;
+
+        }
+}
+
+
+
+systemctl restart nginx
+
+
+
+
+
+
+
+
+
+
+
+
+server {
+        listen 80;
+        server_name measuremints.xyz;
+
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;   
+
+
+#        ssl_certificate /home/ubuntu/apache-ssl-certs/vivaquad_new.crt;
+#        ssl_certificate_key /home/ubuntu/apache-ssl-certs/vivaquad.key;
+
+#        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+#     ssl_prefer_server_ciphers on;
+#     ssl_ciphers 'EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH';
+
+
+        location /api {
+                proxy_pass http://measuremints.xyz:5000; # your app's port
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+        }
+
+        # frontend with react
+location /{
+root /var/www/html/vivaquad/admin-vivaquad/build;
+index index.html index.htm;
+autoindex on ;
+try_files $uri /index.html =404;
+
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+server {
+        listen 80;
+        listen [::]:80;
+        root /var/www/html/measuremints/meas-admin/build;
+
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name measuremints.xyz;
+
+        location / {
+              
+                 try_files $uri $uri/ =404;
+
+        }
+
+       
+        return 301 https://measuremints.xyz$request_uri;
+}
+
+
+# Virtual Host configuration for example.com
+#
+# You can move that to a different file under sites-available/ and symlink that
+# to sites-enabled/ to enable it.
+#
+#server {
+#       listen 80;
+#       listen [::]:80;
+#
+#       server_name example.com;
+#
+#       root /var/www/example.com;
+#       index index.html;
+#
+#       location / {
+#               try_files $uri $uri/ =404;
+#       }
+#}
